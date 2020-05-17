@@ -70,11 +70,13 @@ sudo apt install x11-apps ubuntu-restricted-extras
 ```
 
 ### Configuration
+Reference: [Cygwin/X OpenGL](https://x.cygwin.com/docs/ug/using-glx.html) and [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/FAQ/).
+
 Copy [xpa](bin/xpa) and [killxpa](bin/killxpa) to `~/bin` and do `export PATH="$HOME/bin":$PATH`. Make sure that you can call `cygwin.exe`.
 
 Export the following environment variables:
 ```
-# x11 opengl rendering options
+# x11 opengl rendering options 
 export LIBGL_ALWAYS_INDIRECT=0
 export LIBGL_ALWAYS_SOFTWARE=0
 
