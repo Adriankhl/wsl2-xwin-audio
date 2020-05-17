@@ -4,7 +4,7 @@ See [Awesome-wsl](https://github.com/sirredbeard/Awesome-WSL)
 The following assume that the Ubuntu 18.04 distros `CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.0_x64__79rhkp1fndgsc.Appx` has been downloaded.
 
 ## Installation
-The followings are run on a (git bash)[https://gitforwindows.org/] shell. They can be easily translated to powershell script.
+The followings are run on a [git bash](https://gitforwindows.org/) shell. They can be easily translated to powershell script.
 
 Install: 
 `powershell "Add-AppxPackage .\CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.0_x64__79rhkp1fndgsc.Appx"`
@@ -27,7 +27,7 @@ Create a user as `your-user-name`:
 `powershell "ubuntu1804 config --default-user your-user-name"`
 
 
-## Fix [ram issue](https://github.com/microsoft/WSL/issues/4166)
+## Fix [Ram Issue](https://github.com/microsoft/WSL/issues/4166)
 Open wsl shell.
 
 Run `sudo crontab -e -u root`, add the following to `drop_cache` automatically every 15 min`:
@@ -52,7 +52,7 @@ sudo stat -c '%y' /root/drop_caches_last_run
 
 (Optional) Leave wsl and open Git Bash, limit the memory usage by placing `.wslconfig` ([sample](dotfiles/.wslconfig)) to `~/.wslconfig`.
 
-## Install GUI (X Server) and audio (PulseAudio)
+## Install GUI (X Server) and Audio (PulseAudio)
 There are a few ways to install [X Server](https://www.x.org/wiki/) and [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/) for Windows, my choice here is the good old [Cygwin](https://www.cygwin.com/).
 
 Install [Cygwin](https://www.cygwin.com/) and add the directory of `cygwin.exe` to your environment variable `PATH`. I recommend doing this via [scoop](https://scoop.sh/): `scoop install cygwin`.
@@ -106,7 +106,7 @@ Test X Server - run: `xeyes`
 
 Test PulseAudio - run: `paplay /usr/share/sounds/freedesktop/stereo/bell.oga`
 
-## Fix color display
+## Fix Color Display
 Color display in `/mnt` and [tmux](https://github.com/tmux/tmux/wiki) can be weird in wsl2.
 
 Add (to `~/.zshrc` or `~/.bashrc` if you use bash)
