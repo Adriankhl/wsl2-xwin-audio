@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# kill XWin and pulseaudio if running
+killxpa
+
+# Run xwin
+cygwin.exe -c "XWin :0 -listen tcp -retro -lesspointer -multiwindow -clipboard -ac -nowgl" &
+
+# Run pulseaudio
+wsl_ip=$(ip a | grep "inet " | grep "eth0" | awk '{print $2}')
+cygwin.exe -c "pactl load-module module-native-protocol-tcp auth-ip-acl=$wsl_ip" &

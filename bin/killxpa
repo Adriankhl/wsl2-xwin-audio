@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# kill XWin
+if pgrep -f XWin; then pkill -f XWin; fi
+if tasklist.exe | grep XWin.exe; then taskkill.exe /IM XWin.exe /F; fi
+
+# kill pulseaudio
+if pgrep -f pulseaudio; then pkill -f pulseaudio; fi
+if tasklist.exe | grep pulseaudio.exe; then taskkill.exe /IM pulseaudio.exe /F; fi
