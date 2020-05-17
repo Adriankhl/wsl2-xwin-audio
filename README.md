@@ -4,7 +4,7 @@ See [Awesome-wsl](https://github.com/sirredbeard/Awesome-WSL)
 The following assume that the Ubuntu 18.04 distros `CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.0_x64__79rhkp1fndgsc.Appx` has been downloaded.
 
 ## Installation
-The followings are run on a [git bash](https://gitforwindows.org/) shell. They can be easily translated to powershell script.
+The followings are executed on a [git bash](https://gitforwindows.org/) shell. They can be easily translated to powershell script.
 
 Install: 
 `powershell "Add-AppxPackage .\CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.0_x64__79rhkp1fndgsc.Appx"`
