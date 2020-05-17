@@ -1,4 +1,7 @@
-# Introduction to wsl
+# wsl2-xwin-audio
+Tips to setup GUI in wsl2.
+
+## Introduction
 See [Awesome-wsl](https://github.com/sirredbeard/Awesome-WSL)
 
 The following assume that the Ubuntu 18.04 distros `CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.0_x64__79rhkp1fndgsc.Appx` has been downloaded.
